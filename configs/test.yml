@@ -1,0 +1,18 @@
+
+# Model parameters
+out_classes: 4
+seq: 1024
+trans_bs: 1
+trans_seq: 30
+mstcn_stages: 2
+mstcn_layers: 8
+mstcn_f_maps: 32
+mstcn_f_dim: 2048
+mstcn_causal_conv: True
+
+# Trained models
+down_ratio: 5
+manual_set_fps_ratio: 2
+resnet_model: ./runs/resnet50.pth
+fusion_model: ./runs/fusion.pth
+trans_model: ./runs/transformer.pth

@@ -1,0 +1,46 @@
+seed: 1
+
+# Paras for training feature embedding
+label_dir: <Path of annotations>
+data_file: <File path of *.pkl, which saved the paths of all >
+has_label: True
+sample_weights: [1.0, 1.0, 1.0, 1.0]
+train_names: <Index of training samples>
+val_names: <Index of validation samples>
+test_names: <Index of testing samples>
+num_worker: 16
+
+## ResNet parameters
+out_classes: 4
+class_weights: [0.04837749281514583, 0.5400151879633762, 0.24252126473837363, 0.16908605448310432]
+start_iter: none
+resnet_lr: 5e-4
+resnet_momentum: 0.9
+resnet_weight_decay: 0
+resnet_iterations: 8000
+resnet_train_bs: 128
+resnet_decay_steps: [6000]
+save_model: <Root to save model>
+resnet_model: <Path of ResNet50 model>
+emb_file: <Path of feature embedding>
+
+
+## Fusion-transformer parametres
+mstcn_stages: 2
+mstcn_layers: 8  # Changed
+mstcn_f_maps: 32
+mstcn_f_dim: 2048
+mstcn_causal_conv: True
+seq: 1024
+fusion_iter: none
+fusion_model: <Path of Fusion model>
+
+trans_lr: 1e-2
+trans_weight_decay: 5e-3
+trans_iterations: 4000
+trans_steps: [1500, 2500]
+trans_seq: 30
+trans_bs: 1
+trans_model: <Path of transformer model>
+pred_folder: <Root to save prediction results>
+trans_iter: none
