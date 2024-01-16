@@ -5,6 +5,8 @@
 Submucosal Dissection with Real-time Animal Study</i>" by Jianfeng Cao, Hon-Chi Yip, Yueyao Chen, Markus Scheppach, Xiaobei Luo,
 Hongzheng Yang, Ming Kit Cheng, Yonghao Long, Yueming Jin, Philip Wai-Yan Chiu, Yeung Yam, Helen Mei-Ling Meng, and Qi Dou.</p>
 
+[![Watch the video](./imgs/gui.png)](https://github.com/cao13jf/ESDGUI)
+
 <h2>Dependency installation</h2>
 The model is developed based on pytorch. To install dependencies, run
 
