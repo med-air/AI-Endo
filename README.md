@@ -22,8 +22,8 @@ should be downloaded and arranged locally as
 DATA_ROOT--|
            |--Images--|
            |          |--Video1--|
-           |          |          |--Image00001.png
-           |          |          |--Image00002.png
+           |          |          |--Video1-Image00001.png
+           |          |          |--Video1-Image00002.png
            |          |...
            |
            |--Labels--|--Phase1.txt
